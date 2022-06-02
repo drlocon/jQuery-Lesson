@@ -1,0 +1,10 @@
+.box1 {
+  /* 上から下へアニメーション：最初は非表示になるようにdisplay: none;を追加 */
+  /* 上から下へアニメーション：display: none;はなし */
+  /* 非表示の要素をjQueryで表示：display: none;を追加 */
+  /* 表示されている要素をjQueryで非表示：display: none;はなし */
+  display: none;
+  background-color: #FF0000;
+  height: 200px;
+  width: 200px;
+}
