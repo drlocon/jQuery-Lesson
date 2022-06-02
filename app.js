@@ -112,11 +112,49 @@
 //   イベント発生時に行われる処理
 // });
 
+// $(function(){
+//   $('.box1').on('click',function(){
+//     $('.box1').addClass('box1-ext');
+//   });
+//   $('.box1').mouseout(function(){
+//     $('.box1').removeClass('box1-ext');
+//   });
+// });
+
+//**************************************************************//
+
+// 7章の内容
+
+// イベントが発生した要素のみ変化させたい
+// $(function(){
+//   $('.bg1').on('click',function(){
+//     $('.bg1').slideUp();
+//   });
+
+//   $('.bg2').on('click',function(){
+//     $('.bg2').slideUp();
+//   });
+
+//   $('.bg3').on('click',function(){
+//     $('.bg3').slideUp();
+//   });
+
+//   $('.bg4').on('click',function(){
+//     $('.bg4').slideUp();
+//   });
+// });
+
+// イベントが発生した要素のみ変化させたい＿this
+// $(function(){
+//   $('.box1').on('click',function(){
+//     $(this).slideUp();
+//   });
+// });
+
+// HTML要素直下のすべての子要素を取得する＿children
 $(function(){
-  $('.box1').on('click',function(){
-    $('.box1').addClass('box1-ext');
-  });
-  $('.box1').mouseout(function(){
-    $('.box1').removeClass('box1-ext');
+  // button要素がクリックされたときに処理を実行
+  $('button').on('click', function(){
+    $('ul').children().css('color','red');
   });
 });
